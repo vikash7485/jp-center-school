@@ -1,0 +1,44 @@
+<!--{"title":"Contact Us","nav":"contact","desc":"Contact J.P. Central School, Mathurapur Ghat, Samastipur, Bihar 848101. Phone +91 94304 41288, 97095 33102, 98018 38725. Email jpcs.principal@gmail.com."}-->
+<section class="page-banner">
+  <div class="bg" style="background-image:url('assets/img/hero1.jpg')"></div>
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+    <h1>Contact Us</h1>
+    <p>Have a question about admissions, fees, transport or hostel? We are happy to help.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split" style="align-items:start">
+    <div class="reveal">
+      <span class="eyebrow">Get in Touch</span>
+      <h2>We'd love to hear from you</h2>
+      <div class="contact-item"><div class="icon-box">{{icon:pin}}</div><div><h4>Address</h4><p>J.P. Central School<br>{{school.address}}</p><a href="{{school.mapsLink}}" target="_blank" rel="noopener" style="font-size:.9rem;color:var(--crimson)">Get directions →</a></div></div>
+      <div class="contact-item"><div class="icon-box">{{icon:phone}}</div><div><h4>Phone</h4><p><a href="tel:{{school.phone1raw}}">{{school.phone1}}</a><br><a href="tel:{{school.phone2raw}}">{{school.phone2}}</a><br><a href="tel:{{school.phone3raw}}">{{school.phone3}}</a></p></div></div>
+      <div class="contact-item"><div class="icon-box">{{icon:mail}}</div><div><h4>Email</h4><p><a href="mailto:{{school.email}}">{{school.email}}</a></p></div></div>
+      <div class="contact-item"><div class="icon-box">{{icon:clock}}</div><div><h4>Office Hours</h4><p>Monday – Saturday · 8:00 AM – 2:00 PM</p></div></div>
+      <div class="contact-item"><div class="icon-box">{{icon:instagram}}</div><div><h4>Follow Us</h4><p><a href="{{school.instagram}}" target="_blank" rel="noopener">Instagram @jpcs.samastipur</a><br><a href="{{school.facebook}}" target="_blank" rel="noopener">Facebook</a></p></div></div>
+    </div>
+    <div class="form-card reveal">
+      <span class="eyebrow">Send a Message</span>
+      <h3 style="font-size:1.6rem">Quick enquiry</h3>
+      <form class="form" data-whatsapp="{{school.whatsapp}}" data-title="Enquiry — J.P. Central School website">
+        <div class="form-row">
+          <div><label for="c-name">Your name *</label><input id="c-name" name="name" required autocomplete="name"></div>
+          <div><label for="c-phone">Mobile number *</label><input id="c-phone" name="phone" type="tel" required pattern="[0-9+\s-]{10,15}" autocomplete="tel"></div>
+        </div>
+        <div><label for="c-topic">Regarding</label>
+          <select id="c-topic" name="topic"><option>Admission</option><option>Fees</option><option>Transport</option><option>Hostel</option><option>Job / Career</option><option>Other</option></select></div>
+        <div><label for="c-msg">Message *</label><textarea id="c-msg" name="message" required></textarea></div>
+        <button class="btn btn-primary" type="submit">{{icon:whatsapp}} Send on WhatsApp</button>
+        <p class="form-note">Your message opens in WhatsApp, ready to send to the school office.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section tight bg-white">
+  <div class="container">
+    <iframe class="map" src="{{school.mapsEmbed}}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing J.P. Central School, Mathurapur Ghat, Samastipur"></iframe>
+  </div>
+</section>
